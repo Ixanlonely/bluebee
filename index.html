@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iseng sajaa</title>
+    <style>
+        body {
+            background-color: pink;
+
+        }
+
+        h1 {
+            color : black;
+            background-color: wheat;            
+        }
+
+        #btn {
+            margin: 20;
+            padding: 20px;
+            width: 170px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .img{
+            aspect-ratio: 1/1;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150px;
+        }
+
+        .head{
+            text-align: center;
+            background-color: white;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<img src="images/Pocoyo.jpeg" class="img" alt="Pocoyo">
+<h2 class="head">Haloo bee sayangg cobaa tekan tombol dibawah ini</h2>
+    <button
+     id="btn"
+     onclick="clickButton()"
+     >Klik akuu beee</button>
+</body>
+<script>
+    const body = document.body
+    const btn2 = document.getElementById('btn')
+
+btn2.style.display = 'flex'
+btn2.style.justifyItems = 'center'
+btn2.style.alignContent = 'center'
+
+function clickButton() {
+    btn2.style.backgroundColor = 'wheat'
+    btn2.style.color = 'black'
+    const isi = document.createElement('h1')
+    isi.textContent = 'aku sayanggg sekalii samaa Danish Alya Rahma'
+    body.append(isi)
+}
+
+function kembali() {
+    btn2.style.backgroundColor = 'black'
+    btn2.style.color = 'wheat'
+    btn2.textContent = 'Klik Saya 2'
+}
+
+
+</script>
+</html>
